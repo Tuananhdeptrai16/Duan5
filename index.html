@@ -31,32 +31,75 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
 
 </head>
 <body>
+
+    <!-- overlay -->
+     <label for="menu_input" id="menu__overlay" class="menu_overlay">
+     </label>
+   
+     <!-- menu-drawer -->
+    <div class="menu-drawer">
+    <figure class="Mobile_logo">
+        <img src="/./assets/img/header/log.svg" alt="logo" class="logo">
+        <img src="./assets/img/header/celo-bank.svg" alt="name_log">
+    </figure>
+    <ul id="mobile__nav">
+        <li class="header__nav--title">
+            <a href="#!">Home</a>
+        </li>
+        <li class="header__nav--title">
+            <a href="#Products">Products</a>
+        </li>
+        <li class="header__nav--title">
+            <a href="#Features">Features</a>
+        </li>
+        <li class="header__nav--title">
+            <a href="#blog">Blog</a>
+        </li>
+
+    </ul>
+        <div class="mobile_nav__link">
+            <button type="submit" class="header__link--Login mobile__link--Login">Log in</button>
+            <button  type="submit" class="header__link--signup btn">Sign up</button>
+        </div>
+    </div>
     <div class="container">
         <div class="fix-header">
             <header class="header">
+                <!-- mobile header -->
+                 <label for="menu_input" class="menu ">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="18" height="2" fill="#143C3C"/>
+                        <rect y="7" width="18" height="2" fill="#143C3C"/>
+                        <rect y="14" width="18" height="2" fill="#143C3C"/>
+                        </svg>
+                        
+                 </label>
+                 <!-- end mobile header -->
                 <figure class="header__logo">
                     <img src="/./assets/img/header/log.svg" alt="logo" class="logo">
                     <img src="./assets/img/header/celo-bank.svg" alt="name_log">
                 </figure>
-                <section>
-                    <ul class="header__nav">
+                <nav>
+                    <ul class="header__nav" >
                         <li class="header__nav--title">
                             <a href="#!">Home</a>
                         </li>
                         <li class="header__nav--title">
-                            <a href="#!">Products</a>
+                            <a href="#Products">Products</a>
                         </li>
                         <li class="header__nav--title">
-                            <a href="#!">Features</a>
+                            <a href="#Features">Features</a>
                         </li>
                         <li class="header__nav--title">
-                            <a href="#!">Blog</a>
+                            <a href="#blog">Blog</a>
                         </li>
                     </ul>
-                </section> 
+                </nav> 
                 <section class="header__link">
                     <button type="submit" class="header__link--Login">Log in</button>
                     <button  type="submit" class="header__link--signup btn">Sign up</button>
@@ -68,7 +111,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12">
                     <div class="hero_left ">
-                        <p class="subheading">Digital Smart Wallet</p>
+                        <p class="subheading hero_subheading">Digital Smart Wallet</p>
                         <h2 class="heading hero__heading">Digital <span>Payment </span> For Everyone.</h2>
                         <p class="desc">We bring together eveything that’s required to build websites and apps that accept payments and send payouts globally. We are the best platform. </p>
                         <div class="hero_form">
@@ -79,7 +122,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1 col-md-6col-12">
-                    <figure class="hero_left">
+                    <figure class="hero_right">
                         <img src="./assets/img/hero/Mobile Screen.svg" alt="Mobile" class="hero_left__screenMobile">
                         <img src="./assets/img/hero/stass.svg" alt="stass" class="hero_left__stass">
                         <img src="./assets/img/hero/hero__money.png" alt="hero__money" class="hero__money">
@@ -92,7 +135,7 @@
             </div>
         </section>
         <!-- section 2 -->
-        <section class="works">
+        <section class="works" id="Products">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12">
                     <section class="works_left ">
@@ -115,7 +158,7 @@
                 <div class="col-lg-5 offset-lg-1 col-md-12 col-12">
                     <section class="works_left">
                         <p class="subheading">Digital Smart Wallet</p>
-                        <h2 class=" works_heading">How It Works</h2>
+                        <h2 class="heading works_heading">How It Works</h2>
                         <article class="works_left__list">
                           <!-- item 1 -->
                         <div class="works_left__item">
@@ -163,7 +206,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 offset-lg-1 col-md-12 col-12">
-                    <figure class="payments_left">
+                    <figure class="payments_right">
                         <img src="./assets/img/payments/Card.png" alt="card" class="payments_left__card">
                         <img src="./assets/img/payments/send.svg" alt="send" class="payments_left__send">
                         <img src="./assets/img/payments/payment.png" alt="payment" class="payments_left__payments">
@@ -172,7 +215,7 @@
             </div>
         </section>
         <!-- section 4 -->
-        <section class="wallet">
+        <section class="wallet" id="Features">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12">
                     <figure class="wallet_left ">
@@ -185,7 +228,7 @@
                         </figure>
                 </div>
                 <div class="col-lg-5 offset-lg-1 col-md-12 col-12">
-                    <section class="wallet_left">
+                    <section class="wallet_right">
                         <p class="subheading">Digital Smart Wallet</p>
                         <h2 class="heading wallet_heading">Transfer and Deposite Your Money Anytime</h2>
                         <p class="desc wallet_desc">We bring together eveything that’s required to build websites and apps that accept payments and send payouts globally. We are the best platform.</p>
@@ -216,7 +259,7 @@
                 <h2 class="heading clients_top__heading">What Clients Says</h2>
                 <p class="desc clients_top__desc">Read what clients says about us and about our online banking services that may inspire you</p>
             </div>
-            <div class="row row-cols-md-2 row-cols-1 ">
+            <div class="row row-cols-lg-2 row-cols-sm-1 row-cols-1 ">
                 <div class="col">
                     <section class="clients_left ">
                         <div class="client__message">
@@ -255,7 +298,7 @@
             </div>
         </section>  
         <!-- section 6 -->
-        <section class="blog">
+        <section class="blog" id="blog">
             <article class="blog__top">
                 <section class="blog__top--left">
                     <p class="subheading">Our Blog</p>
@@ -266,7 +309,7 @@
                     <button class="btn bog__link--btn">Read All</button>
                 </section>
             </article>
-            <div class="row row-cols-md-2 row-cols-1 ">
+            <div class="row row-cols-lg-2 row-cols-md-1 row-cols-1 ">
                 <div class="col">
                     <article class="blog__item--top ">
                         <figure class="blog__img">
@@ -394,7 +437,7 @@
                 </ul>
                 <section class="footer__form">
                     <section class="footer__form--content">
-                        <p class="footer__list--heading">footer__form--content</p>
+                        <p class="footer__list--heading">Head Office</p>
                         <p class="footer__list--desc">Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22, Charlottesville, CA 45565</p>
                         
                     </section>
@@ -416,5 +459,6 @@
             <p class="copyright__p">© 2020 Ligft Media All rights reserved.</p>
         </section>
     </footer>
+    <script src="./assets/JS/main.js"></script>
 </body>
 </html>

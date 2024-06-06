@@ -1,0 +1,247 @@
+
+/* pc */
+@media  screen and (min-width:992px) {
+    .menu {
+        display: none;
+    }
+
+}
+/* mobile và tablet  */
+@media screen and (max-width:991px) {
+    .heading, .hero__heading, .hero__submit--desc, .desc  {
+        text-align: center;
+     }
+     .menu,  .menu_input  {
+        display: none;
+    }
+     .header__nav {
+            margin-right: 50px;
+            gap: 30px;
+        }
+      .header {
+        display: flex;
+        justify-content: space-between;
+       }
+       .subheading {
+        margin: 60px auto 0;
+        font-size: 1.2rem;
+       }
+       .heading {
+        font-size: 3rem;
+        line-height: 5rem;
+       }
+       .subheading, .payments__items,  .payments__list, .row {
+        justify-content: center;
+       }
+       .heading,.desc  {
+        margin: 0 auto;
+       }
+       .hero__heading {
+        margin-top: 30px;
+        font-size: 4rem ;
+        line-height: 5rem;
+       }
+       .desc {
+        font-size: 1.2rem;
+       }
+       .payments__list {
+        display: flex;
+        gap: 30px;
+       }
+       .payments__link, .bog__link--btn {
+        margin: 40px auto 0;
+       }
+       .btn {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+       }
+       .payments_left__payments {
+        right: 50px;    
+       }
+       .payments__items--name {
+        width: 150px;
+       }
+       .hero_right {
+        margin-top: 100px;
+       }
+       .hero-stats {
+        top: 0;
+        right: -100px;
+       }
+       .hero__money {
+            bottom: 0;
+            right: -70px;
+        }
+        .human__left {
+            bottom: 0px;
+            left: 150px;
+        }
+        .works_card {
+            left: 500px;
+        }
+
+        .wallet_left__img--human {
+            bottom: 0;
+            left: 50%;
+            translate: -50% 0;
+        }
+        .payments_right, .wallet_left,.fix-header {
+            position: relative;
+        }
+        .payments_right, .wallet_left, .clients_left, .clients_right   {
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .money__decor {
+            top: 200px;
+            right: 0;
+        }
+        .wallet_left__card {
+            top: 280px;
+            left: 80%;
+            translate: -60%;
+        }
+        .clients_left, .clients_right, .blog__top  {
+            flex-direction: column;
+        }
+        .client__triangle {
+            margin-left: 0;
+            transform: translateX(0);
+        }
+        .App {
+            width: auto;
+        }
+        .blog__item--top, .blog__item--bottom {
+            width: 540px;
+            margin: 20px auto;
+        }
+        .footer-box {
+            gap: 200px ;
+            flex-wrap: wrap;
+        }
+        .hero_subheading {
+            margin-top: 0;
+        }
+
+}
+/* tablet   */
+@media screen and (min-width:768px) and (max-width:991px) {
+    .works__img {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .works_left__list {
+        margin-top: 0;
+    }
+}
+/*mobile  */
+@media screen and (max-width:767px) {
+    .menu,  .menu_input  {
+        margin-left: 20px;
+        display: block;
+    }
+    .menu
+    .header__logo {
+        margin-right: 0;
+    }
+    .header {
+        justify-content: space-between;
+    }
+    .blog__item--top, .blog__item--bottom {
+        width: 100%;
+        margin: 0;
+    }
+    .clients_left, .clients_right {
+        margin-top: 0;
+    }
+    .payments, .wallet,.Clients {
+        margin-top: 100px;
+    }
+    .subheading {
+        width: 350px;
+        margin: 0 auto;
+    }
+    .header__nav {
+        display: none;
+    }
+    .desc {
+        width: 40rem;
+    }
+    .heading {
+        width:350px;
+    }
+    .works_heading {
+        margin-left: 50%;
+        translate: 10% 0;
+    }
+    .hero__heading,.hero_subheading,.hero__submit--desc, .desc{
+        text-align: center;
+    }
+    .hero_form, .payments_left__card,.wallet_left, .clients_left , .works_left,.clients_right,
+    .blog__item--top,.blog__item--bottom {
+        scale: 0.7;
+    }
+
+    .hero-stats {
+        top: -80px;
+        right: -46px;
+    }
+    .hero_left__stass {
+        position: absolute;
+        top: 103px;
+        left: -70px;
+    }
+    .hero__money {
+        bottom: 0;
+        right: -20px;
+    }
+    .works_left {
+        margin-right: 300px;
+    }
+    .works {
+        margin: 50px;
+    }
+    .works_Congratulations {
+        bottom: 50px;
+        left: 250px;
+    }
+    .works_left__item--desc {
+        width: 500px;
+    }
+    .human__left {
+        left: 50%;
+        translate: -5%;
+    }
+    .works__img {
+        width: 100%;
+        translate: 50%;
+    }
+    .payments__list {
+        gap: 5px;
+        flex-direction: column;
+    }
+    .payments_left__send, .payments_left__payments, .money__decor, 
+    .header__link  {
+        display: none;
+    }
+    .wallet_left__img--human {
+        left: 40%;
+        bottom: 20px;
+    }
+    .blog__content--heading {
+        margin-top: 0;
+        font-size: 1.6rem;
+        width: 250px;
+    }
+    .footer-box {
+        flex-direction: column;
+        row-gap: 30px;
+        margin-left: 20px;
+    }
+    .footer_infor {
+        margin-left: 20px;
+    }
+}
