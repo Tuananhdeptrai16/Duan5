@@ -151,8 +151,10 @@
         justify-content: space-between;
     }
     .blog__item--top, .blog__item--bottom {
-        width: 100%;
+        width: 500px;
         margin: 0;
+        margin-left: 35%;
+        transform: translateX(-50%);
     }
     .clients_left, .clients_right {
         margin-top: 0;
@@ -243,5 +245,8 @@
     }
     .footer_infor {
         margin-left: 20px;
+    }
+    .header__logo {
+        margin-left: 50px;
     }
 }
